@@ -138,3 +138,27 @@ a = True + 8
 b = False + 8
 print("a;",a)
 print("b:",b)
+
+
+
+print("lucfier the devil true",1,40,sep = '/')
+print("afroz is only ",False,4,4.5,sep = "")
+
+print("hello")
+print("world")
+
+
+print("afroz",4,1.5,True)
+print("afroz",4,1.5,True,sep='/')
+
+print("lucfier")
+print("devil")
+
+print("lucfier",end='/')
+print("devil")
+
+print("lucfier",end=" ")
+print("devil")
+
+print(8)#integer
+print(1e308)
