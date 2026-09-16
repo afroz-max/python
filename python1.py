@@ -89,3 +89,33 @@ elif email == "lucfier@.com" and password !="123":
     
 else:
     print("not correct")
+
+# min of 3 numbers
+
+a = int(input('first number'))
+b = int(input("second number"))
+c = int(input("third number"))
+
+if a<b and a<c:
+    print("smallest number is ",a)
+elif b<c:
+    print("smallest number is ",b)
+else:
+    print("smallest number is ",c)
+
+
+
+# menu driven calculater
+fnum = int(input("enter the first number"))
+snum = int(input("enter the second number"))
+
+op = input("enter the operation")
+if op == '+':
+    print(fnum +snum)
+elif op == '-':
+    print(fnum -snum)
+elif op == '*':
+    print(fnum *snum)
+elif op == "/":
+    print(fnum/snum)
+    
