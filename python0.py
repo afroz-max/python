@@ -107,7 +107,6 @@ print(_)
 
 #Type of conversion
 #impicit and expicit 
-
 #impicit
 a = 5
 b = 2.5
@@ -162,3 +161,8 @@ print("devil")
 
 print(8)#integer
 print(1e308)
+
+
+a = 5 
+b = 7 
+print(a-b)
