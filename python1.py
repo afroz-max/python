@@ -119,3 +119,31 @@ elif op == '*':
 elif op == "/":
     print(fnum/snum)
     
+menu = input("""
+hi! how can in help you.
+1.enter 1 for pin chnage
+2.enter 2 for balance enquiry
+""")
+if menu== '1':
+    print("pin changed successfully")
+elif menu== '2':
+    print("your balance is 10000") 
+
+#moduless in python
+ #maths
+import math
+math.factorial(5)
+
+#keywords
+import keyword
+print(keyword.kwlist)
+
+#random
+import random
+print(random.randint(1,100))
+
+#datetime
+import datetime
+print(datetime.datetime.now())
+
+help("modules")
