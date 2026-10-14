@@ -148,148 +148,233 @@
 #     pass
 
 #creating stings
-s = "hello"
-s = 'hello '
-s = '''hello'''
-print(s)
+# s = "hello"
+# s = 'hello '
+# s = '''hello'''
+# print(s)
 
 
-#Accessing characters in a string
-# positive indexing
+# #Accessing characters in a string
+# # positive indexing
 
-s = 'hello world'
-print(s[0])
+# s = 'hello world'
+# print(s[0])
 
-#negative indexing
-s = 'hello world'
-print(s[-1])
+# #negative indexing
+# s = 'hello world'
+# print(s[-1])
+
+# #slicing
+# s = 'hello world'
+# print(s[0:6:2])
+# print(s[6:0:-1])
+
+# print(s[::-1])
+
+
+# s = 'hello world'
+# print(s[-5:])
+
+# print(s[-1:-6:-1])
+
+
+# #eduting strings
+# # s = 'hello world'
+# # s[0] = "H"
+
+# # python strings are immutable
+
+
+# # s = 'hello world'
+# # del s
+# # print(s)
+
+# # s = 'hello world'
+# # del s[-1:-5:2] #error will  come
+
+# # print(s)
+
+
+# #operations on strings
+# #Arithmetic operations
+
+# print("delhi" + "mumbai")
+
+# print("delhi" + " "+ "mumbai")
+
+# print("delhi" * 3)
+
+# #Relational operations
+
+# print('delhi' == 'goa')
+# print('delhi' != 'goa')
+# print('delhi' > 'goa')#lexicographical comparison
+# print("Goa" > "goa")
+
+# #Logical operations
+# print("hello " and "world")
+# print("hello " or "world")
+# print(" " and "world ")
+# print(" " or "world ")
+# print(not "hello")
+
+# #Loops on strings
+
+# for i in "hello":
+#     print(i)
+
+# for i in "delhi":
+#     print('pune')
+
+# #Membership operations
+# print("D" in "Delhi")
+# print("D" not in "Delhi")
+
+# #Functions on strings
+# #common functions on strings
+# # len 
+# # max
+# #min
+# #sorted
+
+# print(len("heloo world"))
+
+# print(max("hello world"))
+
+# print(min("hello world"))
+
+# print(sorted("hello world"))
+
+# print(sorted("hello world", reverse = True))
+
+
+# #capitalize/Title/Upper/Lower/Swapcase its only works on strings
+
+# s = "hello world"
+# print(s.capitalize())
+# print(s.title())
+# print(s.upper())
+# print(s.lower())
+# print(s.swapcase())
+
+# #count/find/indix
+# print("afroz is a not a good boy".count("a"))
+# print("afroz is a not a good boy".find("a"))
+# print("afroz is a not a good boy".index("a"))
+
+# #endswith/startswith
+# print("afroz is a not a good boy".endswith("boy"))
+# print("afroz is a not a good boy".startswith("afroz"))
+
+# #Format
+# name = "afroz"
+# gender = "male"
+# print("my name is {} and my gender is {}".format(name,gender))
+
+# #isalnum/isalpha/isdigit/isidentifier
+# print("afroz123%".isalnum())
+# print("afroz".isalpha())
+# print("123".isdigit())
+# print("afroz".isidentifier())
+
+# #split/join
+# s = print("afroz is a good boy".split())
+# s = print("afroz is a good boy".split('i'))
+
+# #joim
+# print(" ".join(['afroz','is','a','good','boy']))
+
+
+# #Replace
+# s = "afroz is a good boy"
+# print(s.replace("good","bad"))
+
+# #strip
+
+# s = "   afroz is a good boy   "
+# print(s.strip())
+
+
+
+
+# for i in range(1,10):
+#     if i == 5:
+#         break
+#     print(i)
+
+
+
+
+
+#python lists
+
+# a = 2
+# print(id(2))
+
+L = [1,2,3,4]
+print(id(L))
+print(id (L[0]))
+print(id(L[1]))
+print(id(L[2]))
+print(id(1))
+print(id(2))
+print(id(3))
+
+#characterstics of a list
+#creating a list
+#Empty
+print([])
+#1D homo
+print([1,2,3,4])
+
+#2D
+print([1,2,3],[4,6])
+
+#3D
+print([[[1,2],[3,4]],[[5,6],[7,8]]])
+
+#heterogeneous
+print([1,2.0,"hello",True])
+
+#using the type conversion
+print(list("hello"))
+
+#accessing items form a list
+#indexing
+L = [1,2,3]
+print(L[1])
+#positive indexing 
+print(L[-1])
 
 #slicing
-s = 'hello world'
-print(s[0:6:2])
-print(s[6:0:-1])
+L =[1,2,3,4,5]
+print(L[1:4])
+print(L[-1:2])
 
-print(s[::-1])
+#adding items to a list
+#append
+L = [1,2,3,4,5]
+L.append(True)
+print(L)
 
+#extend
+L = [1,2,3,4,5]
+L.extend([6,7,8])
+print(L)
 
-s = 'hello world'
-print(s[-5:])
+L = [1,2,3,4,5]
+L.extend("delhi")
+print(L)
 
-print(s[-1:-6:-1])
+#insert
+L = [1,2,3,4,5]
+L.insert(1,100)
+print(L)
 
+#Editing iterns in a list
+L = [1,2,3,4,5]
+L[-1] = 100
+L[1:4] = [200,300,400] #slicing
+print(L)
 
-#eduting strings
-# s = 'hello world'
-# s[0] = "H"
-
-# python strings are immutable
-
-
-# s = 'hello world'
-# del s
-# print(s)
-
-# s = 'hello world'
-# del s[-1:-5:2] #error will  come
-
-# print(s)
-
-
-#operations on strings
-#Arithmetic operations
-
-print("delhi" + "mumbai")
-
-print("delhi" + " "+ "mumbai")
-
-print("delhi" * 3)
-
-#Relational operations
-
-print('delhi' == 'goa')
-print('delhi' != 'goa')
-print('delhi' > 'goa')#lexicographical comparison
-print("Goa" > "goa")
-
-#Logical operations
-print("hello " and "world")
-print("hello " or "world")
-print(" " and "world ")
-print(" " or "world ")
-print(not "hello")
-
-#Loops on strings
-
-for i in "hello":
-    print(i)
-
-for i in "delhi":
-    print('pune')
-
-#Membership operations
-print("D" in "Delhi")
-print("D" not in "Delhi")
-
-#Functions on strings
-#common functions on strings
-# len 
-# max
-#min
-#sorted
-
-print(len("heloo world"))
-
-print(max("hello world"))
-
-print(min("hello world"))
-
-print(sorted("hello world"))
-
-print(sorted("hello world", reverse = True))
-
-
-#capitalize/Title/Upper/Lower/Swapcase its only works on strings
-
-s = "hello world"
-print(s.capitalize())
-print(s.title())
-print(s.upper())
-print(s.lower())
-print(s.swapcase())
-
-#count/find/indix
-print("afroz is a not a good boy".count("a"))
-print("afroz is a not a good boy".find("a"))
-print("afroz is a not a good boy".index("a"))
-
-#endswith/startswith
-print("afroz is a not a good boy".endswith("boy"))
-print("afroz is a not a good boy".startswith("afroz"))
-
-#Format
-name = "afroz"
-gender = "male"
-print("my name is {} and my gender is {}".format(name,gender))
-
-#isalnum/isalpha/isdigit/isidentifier
-print("afroz123%".isalnum())
-print("afroz".isalpha())
-print("123".isdigit())
-print("afroz".isidentifier())
-
-#split/join
-s = print("afroz is a good boy".split())
-s = print("afroz is a good boy".split('i'))
-
-#joim
-print(" ".join(['afroz','is','a','good','boy']))
-
-
-#Replace
-s = "afroz is a good boy"
-print(s.replace("good","bad"))
-
-#strip
-
-s = "   afroz is a  good boy   "
-print(s.strip())
+#Dele
